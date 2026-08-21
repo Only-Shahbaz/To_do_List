@@ -11,7 +11,8 @@ def main():
     while True:
         print("1. Add Task")
         print("2. View Tasks")
-        print("3. Exit")
+        print("3. Delete Task")
+        print("4. Exit")
 
         choice = input("Enter your choice: ")
 
@@ -26,6 +27,12 @@ def main():
             for task in manager.tasks:
                 print(task)
         elif choice == "3":
+            task_id = int(input("Enter the ID of the task to delete: "))
+            if manager.delete_task(task_id):
+                print("Task deleted successfully!")
+            else:
+                print("Task not found. Please try again.")
+        elif choice == "4":
             break
         else:
             print("Invalid choice. Please try again.")

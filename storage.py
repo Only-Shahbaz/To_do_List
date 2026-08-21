@@ -11,3 +11,10 @@ class TaskManager:
         self.tasks.append(task)
         self.next_id += 1
         return task
+
+    def delete_task(self, task_id: int) -> bool:
+        for task in self.tasks:
+            if task.task_id == task_id:
+                self.tasks.remove(task)
+                return True
+        return False
