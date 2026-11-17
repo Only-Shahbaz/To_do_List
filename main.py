@@ -1,5 +1,6 @@
 from storage import TaskManager
 
+# Main function to run the To-Do List application
 
 def main():
     manager = TaskManager()

@@ -1,4 +1,4 @@
-
+# prepare the data model for the task
 
 class Task:
     def __init__(self, task_id: int, title:str, description:str, start_date: str, end_date: str):

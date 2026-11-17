@@ -1,5 +1,6 @@
 from models import Task
 
+# TaskManager class to manage the tasks
 
 class TaskManager:
     def __init__(self):
